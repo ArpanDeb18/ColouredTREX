@@ -63,6 +63,7 @@ function setup() {
   gameOver.scale = 0.5;
   restart.scale = 0.1;
   
+  fill("skin");
   invisibleGround = createSprite(width/2,height - 10, width, 125);
   invisibleGround.visible = false;
   
