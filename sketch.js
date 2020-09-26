@@ -90,7 +90,7 @@ function draw() {
 
   textSize(30);
   fill("black");
-  text("Score: "+ score, windowWidth - 250, windowHeight - 900);
+  text("Score: "+ score, width - 250, height - 900);
   
   
   if(gameState === PLAY){
