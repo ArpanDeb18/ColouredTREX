@@ -86,12 +86,7 @@ function setup() {
 
 function draw() {
   
-  background(backgroundImg);
-
-  textSize(30);
-  fill("black");
-  text("Score: "+ score, width - 250, height - 900);
-  
+  background(backgroundImg);  
   
   if(gameState === PLAY){
 
@@ -163,6 +158,10 @@ function draw() {
 
 
   drawSprites();
+  
+  textSize(30);
+  fill("black");
+  text("Score: "+ score, width - 250, height - 900);
 }
 
 function reset(){
