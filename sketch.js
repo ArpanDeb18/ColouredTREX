@@ -62,7 +62,7 @@ function setup() {
  
   gameOver.scale = 0.5;
   restart.scale = 0.1;
-
+  
   invisibleGround = createSprite(width/2,height - 10, width, 125);
   invisibleGround.visible = false;
   
@@ -86,7 +86,10 @@ function setup() {
 
 function draw() {
   
-  background(backgroundImg);  
+  background(backgroundImg);
+
+
+  
   
   if(gameState === PLAY){
 
@@ -144,9 +147,8 @@ function draw() {
      obstaclesGroup.setVelocityXEach(0);
      cloudsGroup.setVelocityXEach(0);
      
-    if(mousePressedOver(restart) || touches.length > 0) {
+    if(mousePressedOver(restart)) {
       reset();
-      touches = [];
     }
    }
   
@@ -159,9 +161,9 @@ function draw() {
 
   drawSprites();
   
-  textSize(30);
+    textSize(30);
   fill("black");
-  text("Score: "+ score, width - 250, height - 900);
+  text("Score: "+ score, windowWidth/2 - 400, 50);
 }
 
 function reset(){
