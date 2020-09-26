@@ -66,9 +66,9 @@ function setup() {
   invisibleGround = createSprite(width/2,height - 10, width, 125);
   invisibleGround.visible = false;
   
-  /*sun = createSprite(width-50,100,10,10);
+  sun = createSprite(width-50,100,10,10);
   sun.addAnimation("sun", sunImage);
-  sun.scale = 0.1;*/
+  sun.scale = 0.1;
 
   obstaclesGroup = new Group();
   cloudsGroup = new Group();
